@@ -104,6 +104,7 @@ public class GameOfLifePinningTest {
 	 * Execution steps: Call cell.toString() for each cell
 	 * Postconditions: return value is "X" for true and "." for false
 	 */
+	@Test
 	public void pinningTestCellToString() {
 		for(int i = 0; i < 5; i++) {
 			for(int j = 0; j < 5; j++) {
@@ -123,6 +124,7 @@ public class GameOfLifePinningTest {
 	 * Execution steps: Call mp.calculateNextIteration()
 	 * Postconnditions: Verify set alive is called for each new cell
 	 */
+	@Test
 	public void pinningTestCalculateNextIteration() {
 		//mocking all of the cells in the cell matrix 
 		for(int i = 0; i < 5; i++) {
