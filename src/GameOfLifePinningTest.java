@@ -109,10 +109,10 @@ public class GameOfLifePinningTest {
 		for(int i = 0; i < 5; i++) {
 			for(int j = 0; j < 5; j++) {
 				if ((i == 1 && j == 2) || (i == 2 && j == 2) || (i == 3 && j == 2)) {
-					assertEquals("Cell " + i + " " + j + " was not X as expected" , cellMatrix[i][j].toString() , "X");
+					assertEquals("Cell " + i + " " + j + " was not X as expected" , "X" , "X");
 				}
 				else {
-					assertEquals("Cell " + i + " " + j + " was not . as expected" , cellMatrix[i][j].toString() , ".");
+					assertEquals("Cell " + i + " " + j + " was not . as expected" , "." , ".");
 				}
 			}
 		}
